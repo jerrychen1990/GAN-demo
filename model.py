@@ -28,7 +28,7 @@ class GANModel:
         self.gan = self.__init_gan()
         self.batch_size = 1000
         self.d_epochs = 2
-        self.g_epochs = 2
+        self.g_epochs = 4
 
         self.d_his = []
         self.g_his = []

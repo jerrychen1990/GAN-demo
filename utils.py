@@ -13,7 +13,7 @@ def add_noise(arr, scale=0.1):
 
 
 def show(sample, max_pt=255.):
-    n = sqrt(sample.shape[1])
+    n = int(sqrt(sample.shape[1]))
     sample = sample.reshape(-1, n)
     sample *= max_pt
     sample = sample.astype(int)
